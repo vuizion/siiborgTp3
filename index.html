@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Siiborg - TP3</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- Add icon library -->
+	<script src="https://kit.fontawesome.com/2ced3b4307.js" crossorigin="anonymous"></script>
+
+	<!-- Add 3D Image Hover -->
+	<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+</head>
+<body>
+	<header>
+		<img src="src/logo.gif" class="logoGif">
+		<div class="indication"></div>
+	</header>
+	<main>
+		<div class="topMain">
+			<p><span class="bringBlue">TP3</span> : Système d'exploitation</p>
+			<p>Questionnaire</p>
+		</div>
+		<form action="" method="get" class="form-box">
+
+
+
+
+			<div class="page" id="page1">
+				<h1 class="tpTitle">TP<span class="smallNumber">3</span> : System d'exploitation</h1>
+				<div>
+					<h3 class="prob">
+						<span class="nameProb">Problématique</span> : Comment utiliser notre système d’exploitation avec des lignes de commandes ?
+					</h3>
+				</div>
+				<div data-tilt class="introImage">
+					<img src="src/matrix.webp">
+				</div>
+				<div class="introTxt">
+					<p>
+						Un <span class="hl">système d'exploitation</span>, ou OS pour Operating System, définit un ensemble de programmes chargé d'établir une relation entre les différentes ressources matérielles, les applications et l'utilisateur.</p><p>Dans un ordinateur, le système d'exploitation a <span class="hl">plusieurs missions</span>. Il gère, entre autres, le processeur et la mémoire vive, optimise l'<span class="hl">exécution des applications</span> en leur attribuant les ressources nécessaires, fournit un certain nombre d'informations sur le bon fonctionnement de l'ordinateur, etc. Il permet l'utilisation de périphériques dans les meilleures conditions et protège l'accès aux ressources.
+					</p>
+				</div>
+				<div class="expectation">
+					<p>
+						Nous aborderons la partie du programme <span class="bringOut">Architectures matérielles et systèmes d’exploitation</span> avec les contenus <span class="bringOut">Systèmes d’exploitation</span>. Les capacités attendues sont <span class="bringOut">Utiliser les commandes de base en ligne de commande ; Gérer les droits et permissions d’accès aux fichiers</span>.
+					</p>
+				</div>
+				<div>
+					<label for="id">Votre identifiant secret :</label>
+					<input type="password" id="id" class="bigInput" name="id" placeholder="Exemple : Dwayne Johnson">
+				</div>
+				<div class="nav intro">
+					<button type="button" class="next blue iRight">Démarrer<i class="fa-solid fa-rocket"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="page" id="page2">
+				<h1>Question 1</h1>
+				<div class="introTxt">
+					<p>
+						Les données sont <span class="hl">organisées</span> sur le disque dur (ou bien SSD aujourd'hui) sous la forme de fichiers. Ce sont généralement de simples morceaux d'une mémoire de masse, sur lesquels un programme peut écrire ce qu'il veut. Le <span class="hl">système de fichiers</span> attribuent plusieurs caractéristiques à chaque fichier. 
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Voici une arborescence des fichiers Linux de votre ordinateur. À quels numéros sur l'image correspondent les <span class="hlg">fichiers</span> demandés ci-dessous ?</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q1.webp">
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelRadio">
+					<label for="q1">Le répertoire <span class="hlg">boot</span> qui contient les fichiers nécessaires au démarrage :</label>
+
+					<div class="listRadioInput">
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c1" name="q1-r1" value="Numéro 1">
+							<label for="q1-r1-c1">1</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c2" name="q1-r1" value="Numéro 2">
+							<label for="q1-r1-c2">2</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c3" name="q1-r1" value="Numéro 3">
+							<label for="q1-r1-c3">3</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c5" name="q1-r1" value="Numéro 5">
+							<label for="q1-r1-c5">5</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c7" name="q1-r1" value="Numéro 7">
+							<label for="q1-r1-c7">7</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c9" name="q1-r1" value="Numéro 9">
+							<label for="q1-r1-c9">9</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r1-c14" name="q1-r1" value="Numéro 14">
+							<label for="q1-r1-c14">14</label>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelRadio">
+					<label for="q1">La <span class="hlg">racine</span> de tous les fichiers présents :</label>
+
+					<div class="listRadioInput">
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c1" name="q1-r2" value="Numéro 1">
+							<label for="q1-r2-c1">1</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c4" name="q1-r2" value="Numéro 4">
+							<label for="q1-r2-c4">4</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c5" name="q1-r2" value="Numéro 5">
+							<label for="q1-r2-c5">5</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c8" name="q1-r2" value="Numéro 8">
+							<label for="q1-r2-c8">8</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c10" name="q1-r2" value="Numéro 10">
+							<label for="q1-r2-c10">10</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c13" name="q1-r2" value="Numéro 13">
+							<label for="q1-r2-c13">13</label>
+						</div>
+						<div class="radioInput">
+							<input type="radio" id="q1-r2-c15" name="q1-r2" value="Numéro 15">
+							<label for="q1-r2-c15">15</label>
+						</div>
+					</div>
+				</div>
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page3">
+				<h1>Question 2</h1>
+				<div class="introTxt">
+					<p>
+						Depuis n'importe quel ordinateur, il est possible d'accéder à l'intégralité de vos <span class="hl">dossiers/fichiers</span> sans passer par une interface. Il faut pour cela écrire des <span class="hl">lignes de commandes</span> simples dans un terminal. Pour ouvrir ce logiciel, tapez dans la barre de recherche d'application Linux (en bas à gauche) ceci : <span class="hl">Xterm</span>.
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour répondre aux questions suivantes, envoyez au terminal les commandes demandées <span class="hlg">en&nbsp;vert</span> puis copier/coller sa réponse.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q2.webp">
+					</div>
+				</div>
+
+
+
+
+
+				<div class="boxLabelText">
+					<label>Tapez la commande <span class="hlg">pwd</span> dans le terminal :</label>
+					<input type="text" id="q2-r1" class="bigInput" name="q2-r1" placeholder="Collez ici sa réponse">
+				</div>
+
+
+				<div class="boxLabelText">
+					<label>Tapez la commande <span class="hlg">help pwd</span> dans le terminal :</label>
+					<input type="text" id="q2-r2" class="bigInput" name="q2-r2" placeholder="Collez ici sa description">
+				</div>
+
+				<div class="boxLabelText">
+					<p>
+						Vous êtes donc dans le répertoire <input type="text" id="q2-r3" class="smallInput" size="20" name="q2-r3">.
+					</p>
+				</div>
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page4">
+				<h1>Question 3</h1>
+				<div class="introTxt">
+					<p>
+						Le bureau est une interface graphique faisant partie de votre <span class="hl">système de fichiers</span>. Cependant, il est beaucoup plus rapide d'organiser vos dossiers par l'intermédiaire de <span class="hl">commandes</span> dans le terminal. Découvrez en à l'aide de ces recherches !
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour répondre aux questions suivantes, faites des recherches internet en autonomie sur les commandes demandées <span class="hlg">en&nbsp;vert</span> puis inscrivez votre réponse.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q3.webp">
+					</div>
+				</div>
+
+
+
+
+
+				<div class="boxLabelText">
+					<label>À quoi sert la commande <span class="hlg">CD</span> envoyée dans le terminal ?</label>
+					<input type="text" id="q3-r1" class="bigInput" name="q3-r1" placeholder="Inscrivez votre réponse">
+				</div>
+
+
+				<div class="boxLabelText">
+					<label>À quoi sert la commande <span class="hlg">MKDIR</span> envoyée dans le terminal ?</label>
+					<input type="text" id="q3-r2" class="bigInput" name="q3-r2" placeholder="Inscrivez votre réponse">
+				</div>
+
+
+				<div class="boxLabelText">
+					<label>À quoi sert la commande <span class="hlg">LS</span> envoyée dans le terminal ?</label>
+					<input type="text" id="q3-r3" class="bigInput" name="q3-r3" placeholder="Inscrivez votre réponse">
+				</div>
+
+
+				<div class="boxLabelText">
+					<label>À quoi sert la commande <span class="hlg">MV</span> envoyée dans le terminal ?</label>
+					<input type="text" id="q3-r4" class="bigInput" name="q3-r4" placeholder="Inscrivez votre réponse">
+				</div>
+
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page5">
+				<h1>Question 4</h1>
+				<div class="introTxt">
+					<p>
+						Vous connaissez maintenant <span class="hl">5 commandes</span> très utiles pour l'organisation de fichiers. Que diriez-vous de suivre ce <span class="hl">tutoriel</span> pour vous entrainer à les utiliser ? Nous allons créer un espace de stockage réservé aux TP de NSI.
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q4.webp">
+					</div>
+				</div>
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 1</span>
+						Créer un dossier pour ranger vos fichiers de TP dans le répertoire « Documents ».
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">CD</span>, se rendre dans le bon répertoire de travail avec la ligne de commande :
+					</p>
+
+					<div class="expectation">
+						<p>
+							cd /home/<input type="text" id="q4-r1" class="smallInput" name="q4-r1" maxlength="4" size="4">/Documents
+						</p>
+					</div>
+
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">MKDIR</span>, créez un répertoire à votre nom avec la ligne de commande :
+					</p>
+
+					<div class="expectation">
+						<p>
+							mkdir TP_<input type="text" id="q4-r2" class="smallInput" name="q4-r2" size="16" placeholder="TonNomPrenom">
+						</p>
+					</div>
+
+
+				</div>
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 2</span>
+						Vérifier que le répertoire existe bien dans le répertoire « Documents ».
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">LS</span>, listez les fichiers et les répertoires :
+					</p>
+
+					<div class="expectation">
+						<p>
+							ls
+						</p>
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 3</span>
+						Transférer vos fichiers dans ce répertoire.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">MV</span>, sélectionnez les bons fichiers à la place du texte bleu, avant le transfert :
+					</p>
+
+					<div class="expectation">
+						<p>
+							mv <span class="bringOut">Bureau/1-archiComputer-jgal.odt</span> Documents/TP_<input type="text" id="q4-r3" class="smallInput" name="q4-r3" size="16" placeholder="TonNomPrenom">
+						</p>
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 4</span>
+						Vérifier si le fichier a bien été transféré en essayant 2 commandes.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">LS</span>, listez les fichiers avec un lien absolu : 
+						<br>
+						( un chemin absolu prend pour référence le début de l’arborescence de fichiers, la racine ; il commence donc toujours par le <u>symbole "/"</u> )
+					</p>
+
+					<div class="expectation">
+						<p>
+							ls /home/<input type="text" id="q4-r4" class="smallInput" name="q4-r4" maxlength="4" size="4">/Documents/TP_<input type="text" id="q4-r5" class="smallInput" name="q4-r5" size="16" placeholder="TonNomPrenom">
+						</p>
+					</div>
+
+
+
+
+
+
+					<p class="colorGrey">
+						• À l'aide de <span class="hlg">LS</span>, listez les fichiers avec un lien relatif : 
+						<br>
+						( un chemin relatif dépend du répertoire courant où se trouve l’utilisateur au moment où il fait référence au fichier. Ici nous somme déjà dans le répertoire <u>/home/nsiX</u> )
+					</p>
+
+					<div class="expectation">
+						<p>
+							ls Documents/TP_<input type="text" id="q4-r6" class="smallInput" name="q4-r6" size="16" placeholder="TonNomPrenom">
+						</p>
+					</div>
+
+				</div>
+
+
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page6">
+				<h1>Question 5</h1>
+				<div class="introTxt">
+					<p>
+						Dans ce <span class="hl">deuxième entrainement</span>, séparé entre la question 5 et 6, vous allez affiner vos <span class="hl">compétences</span> en ligne de commandes. Vous pouvez retourner à vos précedentes réponses pour vous aider. <span class="hl">Préparez vos claviers</span>, c'est parti !
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q5.webp">
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 1</span>
+						Télécharger l’image <u>fornite-hero-edited.jpg</u> via ce bouton.
+					</h4>
+
+					<div class="nav" style="margin-top: -20px;">
+						<a href="src/quest/fortnite-hero-edited.jpg"  target="_blank">
+							<button type="button" class="blue iLeft"><i class="fa-solid fa-file-download"></i>
+							Télécharger
+						</button></a>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 2</span>
+						Ouvrir le dossier des téléchargements par le terminal.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, se rendre dans le répertoire <u>Téléchargements</u> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q5-r1" class="bigInput" name="q5-r1" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, vérifiez que la photo se soit bien enregistrée :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q5-r2" class="bigInput" name="q5-r2" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 3</span>
+						Se déplacer à travers les répertoires de l'ordinateur.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• Tapez la commande <span class="hlg">CD ..</span> pour revenir au répertoire <u>/home/nsi</u> comme affiché ici :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<img src="src/quest/q5-fold-A.svg" class="illu-fold">
+						</p>
+					</div>
+
+
+
+
+
+					<p class="colorGrey">
+						• Exécutez la commande <span class="hlg">CD ../..</span> pour se retrouver dans le répertoire illustré ci-dessous  :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<img src="src/quest/q5-fold-B.svg" class="illu-fold">
+						</p>
+					</div>
+
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, retournez directement à votre répertoire <u>/home/nsi</u> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q5-r3" class="bigInput" name="q5-r3" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+				</div>
+
+				
+
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page7">
+				<h1>Question 6</h1>
+				<div class="introTxt">
+					<p>
+						Dans ce <span class="hl">deuxième entrainement</span>, séparé entre la question 5 et 6, vous allez affiner vos <span class="hl">compétences</span> en ligne de commandes. Vous pouvez retourner à vos précedentes réponses pour vous aider. <span class="hl">Préparez vos claviers</span>, c'est parti !
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q6.webp">
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 4</span>
+						Copier l’image téléchargée directement  dans votre répertoire des TP.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, se rendre dans le répertoire <u>Téléchargements</u> où est stocké le fichier <i>fornite-hero-edited.jpg</i> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q6-r1" class="bigInput" name="q6-r1" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+
+
+					<p class="colorGrey">
+						• Copiez l'image dans votre répertoire des TP en remplaçant <u>nom_fichier</u> et <u>destination</u> de la commande <span class="hlg">cp nom_fichier destination</span> par les termes réels :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q6-r2" class="bigInput" name="q6-r2" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+
+
+					<p class="colorGrey">
+						• Précisez si vous avez utilisé un lien :
+					</p>
+
+
+					<div class="boxLabelRadio" style="margin-top: 0px;">
+						<div class="listRadioInput">
+
+							<div class="radioInput">
+								<input type="radio" id="q6-r3-c1" name="q6-r3" value="absolu">
+								<label for="q6-r3-c1">absolu</label>
+							</div>
+							<div class="radioInput">
+								<input type="radio" id="q6-r3-c2" name="q6-r3" value="relatif">
+								<label for="q6-r3-c2">relatif</label>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 5</span>
+						Contrôler si tout à bien fonctionné.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• Vérifiez que votre fichier <u>fornite-hero-edited.jpg</u> a bien été copié dans votre répertoire TP_<input type="text" id="q6-r4" class="smallInput" name="q6-r4" size="16" placeholder="TonNomPrenom"> en ligne de <span class="hlg">commande</span> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q6-r5" class="bigInput" name="q6-r5" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+				</div>
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 6</span>
+						Enlever les fichiers en trop.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• Avec la commande <span class="hlg">RM NomFichier</span>, supprimez <i>fornite-hero-edited.jpg</i> dans le répertoire <u>Téléchargements</u> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q6-r6" class="bigInput" name="q6-r6" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+					
+				</div>
+
+
+				<div class="outroTxt">
+					<p>
+						Bravo ! Vous avez <span class="hl">terminé</span> ce deuxième entrainement !
+					</p>
+				</div>
+
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="page" id="page8">
+				<h1>Question 7</h1>
+				<div class="introTxt">
+					<p>
+						Dans ce <span class="hl">troisième entrainement</span>, séparé entre la question 7 et 8, vous gérerez les droits et <span class="hl">permissions d’accès aux fichiers</span> en ligne de commandes. Vous pouvez retourner à vos précedentes réponses pour vous aider. <span class="hl">Préparez vos claviers</span>, c'est re-parti !
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q7.webp">
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 1</span>
+						Télécharger le fichier <u>good_at_it-jgal.sh</u> via ce bouton.
+					</h4>
+
+					<div class="nav" style="margin-top: -20px;">
+						<a href="src/quest/good_at_it-jgal.sh"  target="_blank">
+							<button type="button" class="blue iLeft"><i class="fa-solid fa-file-download"></i>
+							Télécharger
+						</button></a>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 2</span>
+						Copier ce fichier téléchargé directement  dans votre répertoire des TP. 
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• Placez-vous préalablement dans votre répertoire <u>/home/nsi</u>
+					</p>
+					<p class="colorGrey">
+						• Copiez le fichier dans votre répertoire des TP en remplaçant <u>nom_fichier</u> et <u>destination</u> de la commande <span class="hlg">cp nom_fichier destination</span> par les termes réels :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q7-r1" class="bigInput" name="q7-r1" placeholder="Exemple : cp Téléchargements/fichier.jpg Bureau">
+						</p>
+					</div>
+				</div>
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 3</span>
+						Afficher les caractéristiques d'un fichier.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, se rendre dans votre répertoire des TP où est maintenant stocké le fichier <u>good_at_it-jgal.sh</u> :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q7-r2" class="bigInput" name="q7-r2" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+
+
+
+					<p class="colorGrey">
+						• Tapez la commande <span class="hlg">LS -L</span> pour afficher les caractéristiques des fichiers du répertoire actuel. Collez celle pour <u>good_at_it-jgal.sh</u> ici :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q7-r3" class="bigInput" name="q7-r3" placeholder="Exemple : -rwxrwxrwx">
+						</p>
+					</div>
+				</div>
+
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="page" id="page9">
+				<h1>Question 8</h1>
+				<div class="introTxt">
+					<p>
+						Dans ce <span class="hl">troisième entrainement</span>, séparé entre la question 7 et 8, vous gérerez les droits et <span class="hl">permissions d’accès aux fichiers</span> en ligne de commandes. Vous pouvez retourner à vos précedentes réponses pour vous aider. <span class="hl">Préparez vos claviers</span>, c'est re-parti !
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q8.webp">
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 4</span>
+						Aidez-vous de la <u>documention</u> pour les questions suivantes, via ce bouton.
+					</h4>
+
+					<div class="nav" style="margin-top: -20px;">
+						<a href="src/quest/q8-docPermissions.webp"  target="_blank">
+							<button type="button" class="blue iLeft"><i class="fa-solid fa-eye"></i>
+							Voir Documentation
+						</button></a>
+					</div>
+				</div>
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 5</span>
+						Comprendre les permissions d’accès aux fichiers.
+					</h4>
+
+
+					<p class="colorGrey">
+						• À l'aide de la <span class="hlg">documentation</span>, notez et décodez les caractéristiques du fichiers <u>good_at_it-jgal.sh</u> :
+					</p>
+
+					<textarea id="q8-r1" class="paraInput" name="q8-r1" placeholder="Exemple : Seul le propriétaire peut lire cette image..."></textarea>
+
+
+					<p class="colorGrey">
+						• Du coup, qui peut éxecuter ce script ?
+					</p>
+
+					<div class="boxLabelRadio" style="margin-top: 0px;">
+						<div class="listRadioInput">
+
+							<div class="radioInput">
+								<input type="radio" id="q8-r2-c1" name="q8-r2" value="Personne">
+								<label for="q8-r2-c1">Personne</label>
+							</div>
+							<div class="radioInput">
+								<input type="radio" id="q8-r2-c2" name="q8-r2" value="Le propriétaire">
+								<label for="q8-r2-c2">Le propriétaire</label>
+							</div>
+							<div class="radioInput">
+								<input type="radio" id="q8-r2-c3" name="q8-r2" value="Tout le monde">
+								<label for="q8-r2-c3">Tout le monde</label>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 6</span>
+						Modifier des permissions d’accès aux fichiers.
+					</h4>
+
+
+					<p class="colorGrey">
+						• Complétez la <span class="hlg">commande</span> pour donner les droits au fichier <u>good_at_it-jgal.sh</u> en exécution pour tous :
+					</p>
+
+					<div class="expectation">
+						<p>
+							sudo chmod <input type="text" id="q8-r3" class="smallInput" name="q8-r3" size="12"> good_at_it-jgal.sh
+						</p>
+					</div>
+
+
+				</div>
+
+
+				<div class="outroTxt">
+					<p>
+						Bravo ! Vous avez <span class="hl">terminé</span> ce troisième entrainement !
+					</p>
+				</div>
+
+
+
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button type="button" class="next green iRight">Suivant<i class="fa-solid fa-check"></i></button>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="page" id="page10">
+				<h1>Question 9</h1>
+				<div class="introTxt">
+					<p>
+						Dans ce <span class="hl">dernier entrainement</span>, vous allez apprendre à <span class="hl">exécuter</span> tous types de programme. Vous pouvez retourner à vos précedentes réponses pour vous aider. <span class="hl">Dernière ligne droite</span>, c'est parti !
+					</p>
+				</div>
+				<div class="boxQuestImage">
+					<div class="QuestText">
+						<h3>Pour cet entrainement, complétez les cases vides par ce qu'il manque, grâce aux commandes <span class="hlg">en&nbsp;vert</span> correspondantes.</h3>
+					</div>
+					<div class="questImage">
+						<img src="src/quest/q9.webp">
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 1</span>
+						Savoir exécuter un fichier.
+					</h4>
+
+
+					<p class="colorGrey">
+						• Avec la commande <span class="hlg">bash good_at_it-jgal.sh</span>, exécutez le fichier du précédent entrainement et copiez le texte du fichier affiché (<span class="hlg">./</span> peut être utilisée à la place de la commande <u>bash</u>) :
+					</p>
+
+					<textarea id="q9-r1" class="paraInput" name="q9-r1" placeholder="Coller le résultat ici"></textarea>
+
+				</div>
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 2</span>
+						Modifier un fichier exécutable.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, donnez les droits au fichier  <u>good_at_it-jgal.sh</u>  en écriture pour tous :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q9-r2" class="bigInput" name="q9-r2" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+
+					<p class="colorGrey">
+						• Avec la commande <span class="hlg">geany good_at_it-jgal.sh</span>, ouvrez le fichier dans l'éditeur de texte Geany.
+					</p>
+
+
+					<p class="colorGrey">
+						• Ajoutez la phrase "<span class="hlg">I am the best</span>" après la ligne <u>Je sais...</u>, puis enregistrez.
+					</p>
+
+				</div>
+
+
+
+				<div class="boxLabelStep">
+					<h4>
+						<span class="hl">Étape 3</span>
+						Éxécuter un fichier à nouveau.
+					</h4>
+
+
+
+
+					<p class="colorGrey">
+						• En ligne de <span class="hlg">commande</span>, souvenez-vous comment lancer le script <u>good_at_it-jgal.sh</u> dans le terminal :
+					</p>
+
+					<div class="expectation">
+						<p>
+							<input type="text" id="q9-r3" class="bigInput" name="q9-r3" placeholder="Inscrivez la commande adéquate">
+						</p>
+					</div>
+
+				</div>
+
+
+				<div class="outroTxt">
+					<p>
+						Bravo ! Vous avez entièrement <span class="hl">terminé</span> ce TP n°3. Qu'en avez-vous pensé ?
+					</p>
+
+					<div class="listStars">
+						<div class="stars sz1">
+							<input type="radio" id="q9-r4-c1" name="q9-r4" value="1 étoile">
+							<label for="q9-r4-c1"></label>
+						</div>
+						<div class="stars sz2">
+							<input type="radio" id="q9-r4-c2" name="q9-r4" value="2 étoiles">
+							<label for="q9-r4-c2"></label>
+						</div>
+						<div class="stars sz3">
+							<input type="radio" id="q9-r4-c3" name="q9-r4" value="3 étoiles">
+							<label for="q9-r4-c3"></label>
+						</div>
+						<div class="stars sz4">
+							<input type="radio" id="q9-r4-c4" name="q9-r4" value="4 étoiles">
+							<label for="q9-r4-c4"></label>
+						</div>
+						<div class="stars sz5">
+							<input type="radio" id="q9-r4-c5" name="q9-r4" value="5 étoiles">
+							<label for="q9-r4-c5"></label>
+						</div>
+					</div>
+ 
+				</div>
+
+
+
+				
+				<div class="nav">
+					<button type="button" class="previous iLeft"><i class="fa-solid fa-arrow-left"></i>Précédent</button>
+					<button class="blue iRight">Terminer<i class="fa-solid fa-flag"></i></button>
+				</div>
+			</div>
+
+
+		</form>
+	</main>
+
+	<footer>
+		<div class="vz">
+			<a href="http://vuizion.fr.nf" target="_blank">
+				<img src="src/vz.svg" class="logoGif">
+			</a>
+
+			<h5 class="onlyDesk">Website designed with love by Vuizion</h5>
+
+			<h5 class="onlyTel">Design by Vuizion</h5>
+			
+			<a href="http://vuizion.fr.nf" target="_blank">
+				<button>Look up</button>
+			</a>
+		</div>
+	</footer>
+
+	<!-- Add 3D Image Hover : Gitub -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+	<!-- script personel -->
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,833 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+{}
+
+
+
+
+
+/* ############ CUSTOM-FONT ############ */
+
+@font-face {
+	font-family: 'Heebo-Regular';
+	src: url('src/font/Heebo-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'K2D-Regular';
+	src: url('src/font/K2D-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'K2D-Bold';
+	src: url('src/font/K2D-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'K2D-ExtraBold';
+	src: url('src/font/K2D-ExtraBold.ttf');
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+/* ############ PARAMETRAGE PAGE ############ */
+::selection {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin:0;
+	margin-top: -20px;
+	background-color: #080711;
+	color: white;
+	padding-top: 0%;
+
+	/* Essai pour rendre tous les txt sans BOLD */
+	font-weight: normal;
+}
+
+.page {
+	display: none;
+	transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ DESIGN GENERAL ############ */
+
+header {
+	font-family: 'K2D-Regular';
+	padding: 50px 10% 130px 10%;
+	background: linear-gradient(70deg, #1B088E, #951AB4);
+	background-image: url("src/bg.webp");
+	background-size: cover;
+}
+
+main {
+	font-family: Heebo-Regular;
+	/*width: 70%;*/
+	background-color: #161721;
+	border: solid #202128 2px;
+	border-radius: 40px;
+	margin: 0 10% 0 10%;
+	transform: translate(0, -110px);
+}
+
+main form {
+	padding: 1em 3em 2em 3em;
+}
+
+p {
+	line-height: 1.9em;
+}
+
+.hl {
+	background-color: rgba(60, 60, 255, 0.3);
+	border-radius: 50px;
+	color: white;
+
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+.hlg {
+	background-color: rgba(60, 255, 60, 0.3);
+	border-radius: 50px;
+	color: white;
+
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ DESIGN LOGO GIF HEADER ############ */
+
+.logoGif {
+	width: 250px;
+	border-radius: 100px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+.topMain {
+	border-bottom: solid #202128 2px;
+	border-radius: 40px 40px 0 0;
+
+	background-color: #11111B;
+	padding: 0 6% 0 6%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: #A6A5BC;
+}
+
+
+.bringBlue {
+	color: #5091F1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ############ DESIGN INPUT ############ */
+
+/*
+.bigInput : C'est la classe des INPUT étant large
+.paraInput : C'est la classe des élément TEXTAREA
+*/
+
+.bigInput, .paraInput {
+	display: block;
+
+	width: calc(100% - 20px);
+	height: 30px;
+	padding: 3px 10px 3px 10px;
+
+	margin-top: 5px;
+
+	background-color: rgba(255, 255, 255, 0.1);
+	border: solid #404148 2px;
+	border-radius: 6px;
+
+	color: white;
+	font-size: 1em;
+	font-family: Heebo-Regular;
+
+	transition: 0.3s;
+	outline:  none;
+}
+
+.paraInput {
+	height: 80px;
+	padding: 5px 10px 5px 10px;
+
+	/* Ne pas plus agrandir horisontalement */
+	max-width : calc(100% - 20px);
+	max-height: 100%;
+}
+
+.bigInput:hover, .paraInput:hover {
+	border-color: #999;
+}
+
+.bigInput:focus, .paraInput:focus {
+	border-color: #1E9BE1;
+}
+
+
+
+
+
+/* ############ DESIGN PARAGRAPH INPUT ############ */
+
+/*
+.smallInput : C'est la classe des INPUT étant intégré à un paragraphe
+*/
+
+.smallInput {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: solid #404148 2px;
+	border-radius: 6px;
+
+	padding: 0 4px 0 4px;
+
+	color: white;
+	font-size: 1em;
+	font-family: Heebo-Regular;
+
+	transition: 0.3s;
+	outline:  none;
+}
+
+.smallInput:hover {
+	border-color: #999;
+}
+
+.smallInput:focus {
+	border-color: #1E9BE1;
+}
+
+
+
+
+
+
+/* ############ DESIGN RADIO INPUT ############ */
+
+/*
+.radioInput : C'est la classe des INPUT étant intégré à un paragraphe
+*/
+
+.listRadioInput {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+}
+
+.listRadioInput div {
+	margin-right: 20px;
+}
+
+.radioInput input {
+	display: none;
+}
+
+.radioInput label {
+	position: relative;
+	font-family: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.radioInput label:before {
+	content: "";
+	height: 15px;
+	width: 15px;
+
+	border: solid #404148 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	border-radius: 100px;
+	margin-right: 8px;
+	transition: 0.2s;
+}
+
+input[type="radio"]:hover + label:before {
+	border-color: #999;
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + label:before {
+	background-color: #1E9BE1;
+	border-color: #61B9EA;
+}
+
+
+
+
+
+
+
+
+/* ############ DESIGN STARS : NOTATION ############ */
+
+
+
+.listStars {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.listStars div {
+	margin-right: 20px;
+}
+
+.stars input {
+	display: none;
+}
+
+.stars label {
+	position: relative;
+	font-family: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.stars label:before {
+	content: "★";
+	height: 30px;
+	width: 30px;
+
+	border: solid #404148 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	border-radius: 100px;
+	margin-right: 8px;
+	transition: 0.2s;
+
+	font-size: 20px;
+	padding: 10px;
+}
+
+.stars input[type="radio"]:hover + label:before {
+	border-color: #ffd700;
+	cursor: pointer;
+}
+
+.stars input[type="radio"]:checked + label:before {
+	background-color: rgba(255, 215, 0, 0.1);
+	border-color: #d4af37;
+	color: #ffd700;
+}
+
+
+/* Modifier la taille des étoiles : plus en plus grosses */
+
+.sz1 label:before {
+	height: 16px;
+	width: 16px;
+	font-size: 10px;
+	padding: 17px;
+}
+
+.sz2 label:before {
+	height: 20px;
+	width: 20px;
+	font-size: 13px;
+	padding: 15px;
+}
+
+.sz3 label:before {
+	height: 24px;
+	width: 24px;
+	font-size: 16px;
+	padding: 13px;
+}
+
+.sz4 label:before {
+	height: 28px;
+	width: 28px;
+	font-size: 19px;
+	padding: 11px;
+}
+
+.sz5 label:before {
+	height: 34px;
+	width: 34px;
+	font-size: 24px;
+	padding: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ TITRE DU TP ############ */
+
+.tpTitle {
+	text-align: center;
+	font-family: K2D-Regular;
+}
+
+.smallNumber {
+	font-size: 0.7em;
+}
+
+
+
+
+
+
+
+/* ############ PROBLEMATIQUE DU TP ############ */
+
+.prob {
+	color: #2BFF73;
+	font-weight: normal;
+}
+
+.nameProb {
+	color: #2BFF73;
+	font-family: K2D-Bold;
+}
+
+
+
+
+
+
+
+
+/* ############ IMAGE DESCRIPTIF D'INTRODUCTION ############ */
+
+.introImage {
+	text-align: center;
+	padding: 1em 0 1em 0;
+}
+.introImage img {
+	width: clamp(250px, 40vw, 460px);
+	border-radius: 20px;
+	box-shadow: 0 0 25px rgba(80, 200, 100, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+/* ############ TEXTE DESCRIPTIF D'INTRODUCTION ############ */
+
+.introTxt {
+	text-indent: 2em;
+	color: #A6A5BC;
+	text-align: justify;
+}
+
+.colorGrey {
+	color: #A6A5BC;
+}
+
+.outroTxt {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	color: #A6A5BC;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ############ CE QUI EST ATTENDUE ############ */
+
+.expectation {
+	margin-bottom: 40px;
+
+	color: #696977;
+	font-size: 0.8em;
+
+	background-color: #11111B;
+	border: solid #202128 2px;
+	border-radius: 10px;
+
+	padding: 0 20px 0 20px;
+
+	text-align: justify;
+}
+
+.bringOut {
+	color: #5978B6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boxQuestImage {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+/* ############ TEXTE DESCRIPTIF DANS QUESTION ############ */
+
+.QuestText {
+	flex-basis: 34%;
+	padding-right: 30px;
+}
+
+
+
+/* ############ IMAGE DESCRIPTIF DANS QUESTION ############ */
+
+.questImage {
+	text-align: right;
+	padding: 1em 0 1em 0;
+	flex-basis: 66%;
+}
+.questImage img {
+	/*width: clamp(250px, 40vw, 460px);*/
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+
+/* ############ IMAGE ILLUSTRATION REPERTORES ############ */
+
+.illu-fold {
+	width: 100%;
+	max-width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ BOITE AVEC VRAI QUESTION ############ */
+
+.boxLabelRadio {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	margin-top: 30px;
+}
+
+
+.boxLabelText {
+	margin-top: 30px;
+}
+
+
+.boxLabelStep {
+	margin-top: 100px;
+
+	border-left: solid rgba(60, 60, 255, 0.3) 3px;;
+	padding-left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ NUMÉRO DE PAGE ############ */
+
+.indication {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.page-num {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height : 30px;
+}
+
+.active {
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow:0px 0px 0px 1px white inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ BOUTON NAVIGATION ############ */
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.nav button {
+	color: white;
+	font-family: Heebo-Regular;
+	font-size: 1em;
+	background-color: rgba(255, 0255, 0255, 0.1);
+	border: solid #404148 2px;
+	padding: 10px 20px 10px 20px;
+	margin-top: 20px;
+	border-radius: 100px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.intro {
+	justify-content: center;
+}
+
+.nav .green {
+	background-color: #26B858;
+	border-color: #67CD8A;
+}
+
+.nav .blue {
+	background-color: #1E9BE1;
+	border-color: #61B9EA;
+}
+
+
+
+
+/* ############ BOUTON ICON ############ */
+
+.iRight i {
+	margin-left: 8px;
+}
+
+.iLeft i {
+	margin-right: 8px;
+}
+
+
+
+
+/* ############ BOUTON HOVER ############ */
+
+.nav button:hover {
+	border-color: #999;
+}
+
+.nav .blue:hover, .nav .green:hover {
+ 	border-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ FOOTER ############ */
+
+.vz {
+	background-color: #000;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	column-gap: 16px;
+}
+
+.vz img {
+	width: 100px;
+	margin-top: 20px;
+}
+
+.vz h5 {
+	font-family: Heebo-Regular;
+	font-weight: normal;
+}
+
+.vz button {
+	font-family: Heebo-Regular;
+	font-size: 0.8em;
+
+	width: 80px;
+	height: 32px;
+
+	background: #14171A;
+	color: #fff;
+
+	border: none;
+	border-radius: 8px;
+
+	transition: 0.15s;
+	cursor: pointer;
+}
+
+.vz button:hover {
+	background-color: #1F2429;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############ FOOTER MOBIL ############ */
+
+
+
+@media (max-width: 600px) {
+  .onlyDesk {
+  	display: none;
+  }
+}
+
+
+@media (min-width: 601px) {
+  .onlyTel {
+  	display: none;
+  }
+}
+
+
+
+
